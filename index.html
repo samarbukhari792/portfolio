@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sayyed Bukhari — Frontend Developer</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+
+  <!-- ======== PRELOADER ======== -->
+  <div id="preloader">
+    <div class="preloader-inner">
+      <div class="preloader-logo">
+        <span class="logo-text">SB</span>
+        <div class="logo-ring"></div>
+      </div>
+      <div class="preloader-bar-wrap">
+        <div class="preloader-bar">
+          <div class="preloader-fill"></div>
+        </div>
+        <span class="preloader-percent">0%</span>
+      </div>
+      <p class="preloader-label">Initializing Experience...</p>
+    </div>
+  </div>
+
+  <!-- ======== CUSTOM CURSOR ======== -->
+  <div class="cursor-outer" id="cursorOuter"></div>
+  <div class="cursor-inner" id="cursorInner"></div>
+
+  <!-- ======== NAVBAR ======== -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>
+        SB
+        <span class="logo-bracket">/&gt;</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#journey" class="nav-link">Journey</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <a href="#contact" class="nav-cta magnetic-btn">
+        <span>Hire Me</span>
+        <div class="btn-glow"></div>
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-menu-close" id="mobileMenuClose"><i class="fas fa-times"></i></button>
+    <ul>
+      <li><a href="#home" class="mobile-link">Home</a></li>
+      <li><a href="#about" class="mobile-link">About</a></li>
+      <li><a href="#skills" class="mobile-link">Skills</a></li>
+      <li><a href="#projects" class="mobile-link">Projects</a></li>
+      <li><a href="#services" class="mobile-link">Services</a></li>
+      <li><a href="#journey" class="mobile-link">Journey</a></li>
+      <li><a href="#contact" class="mobile-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- ======== HERO SECTION ======== -->
+  <section id="home" class="hero-section">
+    <canvas id="particleCanvas"></canvas>
+    <div class="hero-grid-overlay"></div>
+    <div class="hero-noise"></div>
+
+    <!-- Floating shapes -->
+    <div class="hero-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+      <div class="shape shape-4"></div>
+      <div class="shape shape-5"></div>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        <span>Available For Work</span>
+      </div>
+      <div class="hero-greeting">Hello, I'm</div>
+      <h1 class="hero-name">
+        <span class="name-char">S</span><span class="name-char">S</span>
+        <!-- <span class="name-space"> </span> -->
+        <span class="name-char accent">H</span><span class="name-char accent">S</span><span
+          class="name-char accent">B</span>
+      </h1>
+      <div class="hero-title-wrap">
+        <span class="hero-title-prefix">I'm a </span>
+        <span class="hero-typed" id="typedText"></span>
+        <span class="hero-cursor-blink">|</span>
+      </div>
+      <p class="hero-desc">
+        Crafting immersive digital experiences with pixel-perfect precision.<br />
+        Transforming ideas into stunning, interactive web realities.
+      </p>
+      <div class="hero-cta-group">
+        <a href="#projects" class="btn-primary magnetic-btn">
+          <i class="fas fa-eye"></i>
+          <span>View Projects</span>
+          <div class="btn-shine"></div>
+        </a>
+        <a href="#contact" class="btn-secondary magnetic-btn">
+          <i class="fas fa-paper-plane"></i>
+          <span>Hire Me</span>
+        </a>
+      </div>
+      <!-- <div class="hero-socials">
+        <a href="#" class="hero-social-link" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="#" class="hero-social-link" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" class="hero-social-link" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="hero-social-link" target="_blank"><i class="fab fa-instagram"></i></a>
+      </div> -->
+    </div>
+
+    <div class="hero-scroll-indicator">
+      <div class="scroll-mouse">
+        <div class="scroll-wheel"></div>
+      </div>
+      <span>Scroll Down</span>
+    </div>
+
+    <!-- Decorative code block -->
+    <div class="hero-code-block">
+      <div class="code-line"><span class="code-key">const</span> <span class="code-var">developer</span> = {</div>
+      <div class="code-line"> <span class="code-prop">name</span>: <span class="code-str">"Sayyed Bukhari"</span>,</div>
+      <div class="code-line"> <span class="code-prop">role</span>: <span class="code-str">"Frontend Dev"</span>,</div>
+      <div class="code-line"> <span class="code-prop">passion</span>: <span class="code-str">"Web Magic"</span></div>
+      <div class="code-line">};</div>
+    </div>
+  </section>
+
+  <!-- ======== ABOUT SECTION ======== -->
+  <section id="about" class="about-section">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-tag">// about me</span>
+        <h2 class="section-title">Who Am <span class="gradient-text">I?</span></h2>
+        <p class="section-subtitle">The developer behind the magic</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-image-col">
+          <div class="about-img-wrapper">
+            <div class="about-img-ring ring-1"></div>
+            <div class="about-img-ring ring-2"></div>
+            <div class="about-img-placeholder">
+              <div class="profile-avatar">
+                <!-- <i class="fas fa-user"></i> --><img src="boy1.png">
+              </div>
+              <div class="img-badge img-badge-1">
+                <i class="fas fa-code"></i>
+                <span>3+ Years</span>
+              </div>
+              <div class="img-badge img-badge-2">
+                <i class="fas fa-star"></i>
+                <span>Top Rated</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-content-col">
+          <h3 class="about-heading">Frontend Developer <span class="amp">&amp;</span> Creative Designer</h3>
+          <p class="about-para">
+            I'm a passionate frontend developer with 3+ years of experience creating beautiful, functional, and
+            user-centered digital experiences. My expertise spans across modern web technologies, animation frameworks,
+            and UI/UX design principles.
+          </p>
+          <p class="about-para">
+            I specialize in building high-performance websites that don't just function flawlessly — they <em>feel</em>
+            extraordinary. Every pixel, every animation, every interaction is crafted with intention and precision.
+          </p>
+
+          <div class="about-tags">
+            <span class="about-tag">HTML5</span>
+            <span class="about-tag">CSS3</span>
+            <span class="about-tag">JavaScript</span>
+            <span class="about-tag">GSAP</span>
+            <span class="about-tag">Figma</span>
+            <span class="about-tag">UI/UX</span>
+          </div>
+
+          <div class="about-actions">
+            <a href="#" class="btn-primary magnetic-btn">
+              <i class="fas fa-download"></i>
+              <span>Download CV</span>
+              <div class="btn-shine"></div>
+            </a>
+            <a href="#contact" class="btn-ghost">
+              <span>Let's Talk</span>
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stats Row -->
+      <div class="stats-row">
+        <div class="stat-card">
+          <div class="stat-icon"><i class="fas fa-rocket"></i></div>
+          <div class="stat-number" data-target="80">0</div>
+          <div class="stat-plus">+</div>
+          <div class="stat-label">Projects Completed</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon"><i class="fas fa-users"></i></div>
+          <div class="stat-number" data-target="50">0</div>
+          <div class="stat-plus">+</div>
+          <div class="stat-label">Happy Clients</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon"><i class="fas fa-calendar-alt"></i></div>
+          <div class="stat-number" data-target="3">0</div>
+          <div class="stat-plus">+</div>
+          <div class="stat-label">Years Experience</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon"><i class="fas fa-trophy"></i></div>
+          <div class="stat-number" data-target="15">0</div>
+          <div class="stat-plus">+</div>
+          <div class="stat-label">Awards Won</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== SKILLS SECTION ======== -->
+  <section id="skills" class="skills-section">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-tag">// tech stack</span>
+        <h2 class="section-title">My <span class="gradient-text">Skills</span></h2>
+        <p class="section-subtitle">Technologies I work with</p>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-card" data-tilt>
+          <div class="skill-icon-wrap html"><i class="fab fa-html5"></i></div>
+          <h4 class="skill-name">HTML5</h4>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" data-width="95">
+              <div class="skill-bar-fill"></div>
+            </div>
+            <span class="skill-percent">95%</span>
+          </div>
+          <p class="skill-desc">Semantic markup, accessibility, SEO-friendly structure</p>
+          <div class="skill-glow"></div>
+        </div>
+
+        <div class="skill-card" data-tilt>
+          <div class="skill-icon-wrap css"><i class="fab fa-css3-alt"></i></div>
+          <h4 class="skill-name">CSS3</h4>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" data-width="92">
+              <div class="skill-bar-fill"></div>
+            </div>
+            <span class="skill-percent">92%</span>
+          </div>
+          <p class="skill-desc">Animations, Grid, Flexbox, custom properties</p>
+          <div class="skill-glow"></div>
+        </div>
+
+        <div class="skill-card" data-tilt>
+          <div class="skill-icon-wrap js"><i class="fab fa-js-square"></i></div>
+          <h4 class="skill-name">JavaScript</h4>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" data-width="88">
+              <div class="skill-bar-fill"></div>
+            </div>
+            <span class="skill-percent">88%</span>
+          </div>
+          <p class="skill-desc">ES6+, DOM manipulation, APIs, async patterns</p>
+          <div class="skill-glow"></div>
+        </div>
+
+        <div class="skill-card" data-tilt>
+          <div class="skill-icon-wrap gsap"><i class="fas fa-wand-magic-sparkles"></i></div>
+          <h4 class="skill-name">GSAP</h4>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" data-width="85">
+              <div class="skill-bar-fill"></div>
+            </div>
+            <span class="skill-percent">85%</span>
+          </div>
+          <p class="skill-desc">ScrollTrigger, Timeline, advanced animations</p>
+          <div class="skill-glow"></div>
+        </div>
+
+        <div class="skill-card" data-tilt>
+          <div class="skill-icon-wrap responsive"><i class="fas fa-mobile-screen-button"></i></div>
+          <h4 class="skill-name">Responsive Design</h4>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" data-width="93">
+              <div class="skill-bar-fill"></div>
+            </div>
+            <span class="skill-percent">93%</span>
+          </div>
+          <p class="skill-desc">Mobile-first, fluid layouts, cross-browser</p>
+          <div class="skill-glow"></div>
+        </div>
+
+        <div class="skill-card" data-tilt>
+          <div class="skill-icon-wrap uiux"><i class="fas fa-pen-nib"></i></div>
+          <h4 class="skill-name">UI/UX Design</h4>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" data-width="80">
+              <div class="skill-bar-fill"></div>
+            </div>
+            <span class="skill-percent">80%</span>
+          </div>
+          <p class="skill-desc">Design systems, wireframes, prototyping</p>
+          <div class="skill-glow"></div>
+        </div>
+
+        <div class="skill-card" data-tilt>
+          <div class="skill-icon-wrap github"><i class="fab fa-github"></i></div>
+          <h4 class="skill-name">GitHub</h4>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" data-width="87">
+              <div class="skill-bar-fill"></div>
+            </div>
+            <span class="skill-percent">87%</span>
+          </div>
+          <p class="skill-desc">Version control, collaboration, CI/CD workflows</p>
+          <div class="skill-glow"></div>
+        </div>
+
+        <div class="skill-card" data-tilt>
+          <div class="skill-icon-wrap figma"><i class="fab fa-figma"></i></div>
+          <h4 class="skill-name">Figma</h4>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" data-width="82">
+              <div class="skill-bar-fill"></div>
+            </div>
+            <span class="skill-percent">82%</span>
+          </div>
+          <p class="skill-desc">Component design, auto-layout, prototyping</p>
+          <div class="skill-glow"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== PROJECTS SECTION ======== -->
+  <section id="projects" class="projects-section">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-tag">// my work</span>
+        <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+        <p class="section-subtitle">A showcase of my best work</p>
+      </div>
+
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="landing">Landing Pages</button>
+        <button class="filter-btn" data-filter="dashboard">Dashboards</button>
+        <button class="filter-btn" data-filter="ui">UI Designs</button>
+      </div>
+
+      <div class="projects-grid" id="projectsGrid">
+
+        <div class="project-card" data-category="landing">
+          <div class="project-img-wrap">
+            <div class="project-img-placeholder">
+              <div class="proj-icon"><i class="fas fa-rocket"></i></div>
+              <div class="proj-gradient gradient-1"></div>
+            </div>
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#" class="proj-link" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                <a href="#" class="proj-link" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="ptag">HTML</span><span class="ptag">CSS</span><span class="ptag">GSAP</span>
+            </div>
+            <h3 class="project-title">NexaLaunch</h3>
+            <p class="project-desc">High-converting SaaS landing page with stunning animations and premium UI design.
+            </p>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="dashboard">
+          <div class="project-img-wrap">
+            <div class="project-img-placeholder">
+              <div class="proj-icon"><i class="fas fa-chart-line"></i></div>
+              <div class="proj-gradient gradient-2"></div>
+            </div>
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#" class="proj-link" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                <a href="#" class="proj-link" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="ptag">JS</span><span class="ptag">Chart.js</span><span class="ptag">CSS</span>
+            </div>
+            <h3 class="project-title">AnalyticsPro</h3>
+            <p class="project-desc">Feature-rich analytics dashboard with real-time data visualization and dark theme.
+            </p>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="ui">
+          <div class="project-img-wrap">
+            <div class="project-img-placeholder">
+              <div class="proj-icon"><i class="fas fa-palette"></i></div>
+              <div class="proj-gradient gradient-3"></div>
+            </div>
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#" class="proj-link" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                <a href="#" class="proj-link" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="ptag">Figma</span><span class="ptag">CSS</span><span class="ptag">JS</span>
+            </div>
+            <h3 class="project-title">DesignSystem X</h3>
+            <p class="project-desc">Complete UI component library with dark/light modes and accessible design tokens.
+            </p>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="landing">
+          <div class="project-img-wrap">
+            <div class="project-img-placeholder">
+              <div class="proj-icon"><i class="fas fa-store"></i></div>
+              <div class="proj-gradient gradient-4"></div>
+            </div>
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#" class="proj-link" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                <a href="#" class="proj-link" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="ptag">HTML</span><span class="ptag">GSAP</span><span class="ptag">ScrollTrigger</span>
+            </div>
+            <h3 class="project-title">ShopElite</h3>
+            <p class="project-desc">Luxury e-commerce landing page with scroll-based storytelling and immersive visuals.
+            </p>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="dashboard">
+          <div class="project-img-wrap">
+            <div class="project-img-placeholder">
+              <div class="proj-icon"><i class="fas fa-layer-group"></i></div>
+              <div class="proj-gradient gradient-5"></div>
+            </div>
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#" class="proj-link" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                <a href="#" class="proj-link" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="ptag">JS</span><span class="ptag">CSS Grid</span><span class="ptag">API</span>
+            </div>
+            <h3 class="project-title">TaskForge</h3>
+            <p class="project-desc">Project management dashboard with kanban boards, drag & drop, and team analytics.
+            </p>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="ui">
+          <div class="project-img-wrap">
+            <div class="project-img-placeholder">
+              <div class="proj-icon"><i class="fas fa-mobile-alt"></i></div>
+              <div class="proj-gradient gradient-6"></div>
+            </div>
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#" class="proj-link" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                <a href="#" class="proj-link" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="ptag">Figma</span><span class="ptag">HTML</span><span class="ptag">GSAP</span>
+            </div>
+            <h3 class="project-title">AppFlow UI</h3>
+            <p class="project-desc">Mobile-first app UI kit with 50+ components, micro-animations, and design tokens.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== SERVICES SECTION ======== -->
+  <section id="services" class="services-section">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-tag">// what I do</span>
+        <h2 class="section-title">My <span class="gradient-text">Services</span></h2>
+        <p class="section-subtitle">What I can build for you</p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card" data-tilt>
+          <div class="service-icon-wrap"><i class="fas fa-pencil-ruler"></i></div>
+          <h3 class="service-title">Website Design</h3>
+          <p class="service-desc">Stunning, modern website designs that capture attention and convert visitors into
+            customers.</p>
+          <ul class="service-list">
+            <li><i class="fas fa-check"></i> Custom Visual Design</li>
+            <li><i class="fas fa-check"></i> Brand Identity</li>
+            <li><i class="fas fa-check"></i> Wireframing & Prototyping</li>
+          </ul>
+          <div class="service-number">01</div>
+          <div class="service-glow"></div>
+        </div>
+
+        <div class="service-card" data-tilt>
+          <div class="service-icon-wrap"><i class="fas fa-bolt"></i></div>
+          <h3 class="service-title">Landing Pages</h3>
+          <p class="service-desc">High-converting landing pages engineered to maximize engagement and generate leads.
+          </p>
+          <ul class="service-list">
+            <li><i class="fas fa-check"></i> Conversion Focused</li>
+            <li><i class="fas fa-check"></i> A/B Testing Ready</li>
+            <li><i class="fas fa-check"></i> Fast Loading</li>
+          </ul>
+          <div class="service-number">02</div>
+          <div class="service-glow"></div>
+        </div>
+
+        <div class="service-card" data-tilt>
+          <div class="service-icon-wrap"><i class="fas fa-id-card"></i></div>
+          <h3 class="service-title">Portfolio Websites</h3>
+          <p class="service-desc">Premium portfolio experiences that showcase your work and personality with elegance.
+          </p>
+          <ul class="service-list">
+            <li><i class="fas fa-check"></i> Personal Branding</li>
+            <li><i class="fas fa-check"></i> Project Showcase</li>
+            <li><i class="fas fa-check"></i> Smooth Animations</li>
+          </ul>
+          <div class="service-number">03</div>
+          <div class="service-glow"></div>
+        </div>
+
+        <div class="service-card" data-tilt>
+          <div class="service-icon-wrap"><i class="fas fa-building"></i></div>
+          <h3 class="service-title">Business Websites</h3>
+          <p class="service-desc">Professional business websites that establish credibility and drive growth.</p>
+          <ul class="service-list">
+            <li><i class="fas fa-check"></i> SEO Optimized</li>
+            <li><i class="fas fa-check"></i> Contact Integration</li>
+            <li><i class="fas fa-check"></i> CMS Ready</li>
+          </ul>
+          <div class="service-number">04</div>
+          <div class="service-glow"></div>
+        </div>
+
+        <div class="service-card" data-tilt>
+          <div class="service-icon-wrap"><i class="fas fa-code"></i></div>
+          <h3 class="service-title">Frontend Development</h3>
+          <p class="service-desc">Clean, maintainable frontend code built with modern standards and best practices.</p>
+          <ul class="service-list">
+            <li><i class="fas fa-check"></i> Semantic HTML/CSS</li>
+            <li><i class="fas fa-check"></i> Responsive Code</li>
+            <li><i class="fas fa-check"></i> Performance Tuned</li>
+          </ul>
+          <div class="service-number">05</div>
+          <div class="service-glow"></div>
+        </div>
+
+        <div class="service-card" data-tilt>
+          <div class="service-icon-wrap"><i class="fas fa-film"></i></div>
+          <h3 class="service-title">UI Animation</h3>
+          <p class="service-desc">Breathtaking micro-interactions and scroll animations that delight and engage users.
+          </p>
+          <ul class="service-list">
+            <li><i class="fas fa-check"></i> GSAP Animations</li>
+            <li><i class="fas fa-check"></i> CSS Transitions</li>
+            <li><i class="fas fa-check"></i> Interactive Effects</li>
+          </ul>
+          <div class="service-number">06</div>
+          <div class="service-glow"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== JOURNEY / TIMELINE SECTION ======== -->
+  <section id="journey" class="journey-section">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-tag">// my story</span>
+        <h2 class="section-title">My <span class="gradient-text">Journey</span></h2>
+        <p class="section-subtitle">The path that shaped me</p>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-line"></div>
+        <div class="timeline-line-fill" id="timelineFill"></div>
+
+        <div class="timeline-item timeline-left">
+          <div class="timeline-dot">
+            <i class="fas fa-code"></i>
+          </div>
+          <div class="timeline-content">
+            <span class="timeline-date">2021 — Early Days</span>
+            <h3 class="timeline-title">Learning HTML & CSS</h3>
+            <p class="timeline-desc">Started the coding journey with the fundamentals. Built my first static webpage and
+              fell in love with the power of creating things on the web from scratch.</p>
+            <div class="timeline-tags">
+              <span>HTML5</span><span>CSS3</span><span>Basics</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item timeline-right">
+          <div class="timeline-dot">
+            <i class="fab fa-js"></i>
+          </div>
+          <div class="timeline-content">
+            <span class="timeline-date">2021 — Mid Year</span>
+            <h3 class="timeline-title">JavaScript Discovery</h3>
+            <p class="timeline-desc">Dived deep into JavaScript. Mastered DOM manipulation, events, async programming,
+              and APIs. Built interactive apps that breathed life into static pages.</p>
+            <div class="timeline-tags">
+              <span>JavaScript</span><span>DOM</span><span>APIs</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item timeline-left">
+          <div class="timeline-dot">
+            <i class="fas fa-wand-magic-sparkles"></i>
+          </div>
+          <div class="timeline-content">
+            <span class="timeline-date">2022 — Level Up</span>
+            <h3 class="timeline-title">Mastering GSAP</h3>
+            <p class="timeline-desc">Discovered the world of professional web animation through GSAP. Learned
+              ScrollTrigger, timelines, and created my first truly animated webpage that blew people away.</p>
+            <div class="timeline-tags">
+              <span>GSAP</span><span>ScrollTrigger</span><span>Animation</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item timeline-right">
+          <div class="timeline-dot">
+            <i class="fas fa-briefcase"></i>
+          </div>
+          <div class="timeline-content">
+            <span class="timeline-date">2022 — Big Move</span>
+            <h3 class="timeline-title">Freelancing Journey</h3>
+            <p class="timeline-desc">Launched freelancing career on Fiverr and Upwork. Delivered 20+ projects in the
+              first six months. Built a reputation for premium quality and pixel-perfect execution.</p>
+            <div class="timeline-tags">
+              <span>Fiverr</span><span>Upwork</span><span>Clients</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item timeline-left">
+          <div class="timeline-dot">
+            <i class="fas fa-star"></i>
+          </div>
+          <div class="timeline-content">
+            <span class="timeline-date">2023–Present</span>
+            <h3 class="timeline-title">Building Creative Websites</h3>
+            <p class="timeline-desc">Now specializing in award-worthy creative websites. Combining design sensibility
+              with technical mastery to create digital experiences that stop people in their tracks.</p>
+            <div class="timeline-tags">
+              <span>Creative</span><span>Premium</span><span>Full Stack</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== SOCIAL SECTION ======== -->
+  <section id="social" class="social-section">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-tag">// connect with me</span>
+        <h2 class="section-title">Find Me <span class="gradient-text">Online</span></h2>
+        <p class="section-subtitle">Let's connect across platforms</p>
+      </div>
+
+      <div class="social-grid">
+        <a href="#" target="_blank" class="social-card social-github">
+          <div class="social-icon-wrap"><i class="fab fa-github"></i></div>
+          <div class="social-info">
+            <h4>GitHub</h4>
+            <span>@SayyedBukhari</span>
+          </div>
+          <div class="social-stat">80+ Repos</div>
+          <i class="fas fa-arrow-up-right-from-square social-arrow"></i>
+          <div class="social-neon"></div>
+        </a>
+
+        <a href="#" target="_blank" class="social-card social-linkedin">
+          <div class="social-icon-wrap"><i class="fab fa-linkedin-in"></i></div>
+          <div class="social-info">
+            <h4>LinkedIn</h4>
+            <span>Sayyed Bukhari</span>
+          </div>
+          <div class="social-stat">500+ Connects</div>
+          <i class="fas fa-arrow-up-right-from-square social-arrow"></i>
+          <div class="social-neon"></div>
+        </a>
+
+        <a href="#" target="_blank" class="social-card social-instagram">
+          <div class="social-icon-wrap"><i class="fab fa-instagram"></i></div>
+          <div class="social-info">
+            <h4>Instagram</h4>
+            <span>@Sayyed.codes</span>
+          </div>
+          <div class="social-stat">2K+ Followers</div>
+          <i class="fas fa-arrow-up-right-from-square social-arrow"></i>
+          <div class="social-neon"></div>
+        </a>
+
+        <a href="#" target="_blank" class="social-card social-twitter">
+          <div class="social-icon-wrap"><i class="fab fa-x-twitter"></i></div>
+          <div class="social-info">
+            <h4>Twitter / X</h4>
+            <span>@SayyedBukhari_dev</span>
+          </div>
+          <div class="social-stat">1.5K Followers</div>
+          <i class="fas fa-arrow-up-right-from-square social-arrow"></i>
+          <div class="social-neon"></div>
+        </a>
+
+        <a href="#" target="_blank" class="social-card social-fiverr">
+          <div class="social-icon-wrap"><i class="fas fa-briefcase"></i></div>
+          <div class="social-info">
+            <h4>Fiverr</h4>
+            <span>SayyedBukhari_dev</span>
+          </div>
+          <div class="social-stat">Top Rated Seller</div>
+          <i class="fas fa-arrow-up-right-from-square social-arrow"></i>
+          <div class="social-neon"></div>
+        </a>
+
+        <a href="mailto:Sayyed@example.com" class="social-card social-email">
+          <div class="social-icon-wrap"><i class="fas fa-envelope"></i></div>
+          <div class="social-info">
+            <h4>Email</h4>
+            <span>Sayyed@example.com</span>
+          </div>
+          <div class="social-stat">Open to Collab</div>
+          <i class="fas fa-arrow-up-right-from-square social-arrow"></i>
+          <div class="social-neon"></div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== TESTIMONIALS SECTION ======== -->
+  <section id="testimonials" class="testimonials-section">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-tag">// client love</span>
+        <h2 class="section-title">What Clients <span class="gradient-text">Say</span></h2>
+        <p class="section-subtitle">Real feedback from real clients</p>
+      </div>
+
+      <div class="testimonials-wrapper">
+        <div class="testimonials-track" id="testimonialsTrack">
+
+          <div class="testimonial-card">
+            <div class="testi-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="testi-text">"Sayyed completely transformed our website. The animations are breathtaking, the
+              performance is flawless, and our conversion rate jumped 40% in the first month. Absolutely world-class
+              work!"</p>
+            <div class="testi-author">
+              <div class="testi-avatar"><span>JS</span></div>
+              <div class="testi-info">
+                <strong>James Sullivan</strong>
+                <span>CEO, TechVentures Inc.</span>
+              </div>
+            </div>
+            <div class="testi-quote"><i class="fas fa-quote-right"></i></div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testi-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="testi-text">"I've worked with many freelancers, but Sayyed is on a completely different level. The
+              portfolio site he built for me gets compliments every single day. The animations are just *chef's kiss*."
+            </p>
+            <div class="testi-author">
+              <div class="testi-avatar"><span>SM</span></div>
+              <div class="testi-info">
+                <strong>Sofia Martinez</strong>
+                <span>Creative Director, Pixel Studio</span>
+              </div>
+            </div>
+            <div class="testi-quote"><i class="fas fa-quote-right"></i></div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testi-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="testi-text">"The landing page Sayyed built generated $50K in its first week. The attention to
+              detail, the smooth scrolling, the responsive design — everything exceeded our expectations dramatically."
+            </p>
+            <div class="testi-author">
+              <div class="testi-avatar"><span>RC</span></div>
+              <div class="testi-info">
+                <strong>Ryan Chen</strong>
+                <span>Founder, LaunchPad Digital</span>
+              </div>
+            </div>
+            <div class="testi-quote"><i class="fas fa-quote-right"></i></div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testi-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="testi-text">"Hired Sayyed for a dashboard UI and was blown away. He delivered 5 days early, the code
+              is immaculate, and the final result looks like it came from a top Silicon Valley agency. Will hire again!"
+            </p>
+            <div class="testi-author">
+              <div class="testi-avatar"><span>AK</span></div>
+              <div class="testi-info">
+                <strong>Aisha Kamara</strong>
+                <span>Product Manager, DataFlow</span>
+              </div>
+            </div>
+            <div class="testi-quote"><i class="fas fa-quote-right"></i></div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testi-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="testi-text">"Best investment I've made for my business. Sayyed built a stunning website that
+              perfectly captures our brand. The scroll animations alone are worth every penny. Highly recommend!"</p>
+            <div class="testi-author">
+              <div class="testi-avatar"><span>LP</span></div>
+              <div class="testi-info">
+                <strong>Luca Petrov</strong>
+                <span>Owner, Luxe Brand Studio</span>
+              </div>
+            </div>
+            <div class="testi-quote"><i class="fas fa-quote-right"></i></div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="testimonials-nav">
+        <button class="testi-nav-btn" id="testiPrev"><i class="fas fa-arrow-left"></i></button>
+        <div class="testi-dots" id="testiDots"></div>
+        <button class="testi-nav-btn" id="testiNext"><i class="fas fa-arrow-right"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== CONTACT SECTION ======== -->
+  <section id="contact" class="contact-section">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-tag">// let's work</span>
+        <h2 class="section-title">Hire <span class="gradient-text">Me</span></h2>
+        <p class="section-subtitle">Ready to bring your vision to life</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info-col">
+          <div class="availability-badge">
+            <div class="avail-dot"></div>
+            <span>Available For Freelance</span>
+          </div>
+
+          <h3 class="contact-heading">Let's Create Something <span class="gradient-text">Extraordinary</span></h3>
+          <p class="contact-para">Have a project in mind? I'd love to hear about it. Send me a message and let's discuss
+            how we can bring your vision to reality with stunning design and flawless code.</p>
+
+          <div class="contact-cards">
+            <div class="contact-card-item">
+              <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+              <div class="contact-detail">
+                <span>Email</span>
+                <strong>Sayyed@example.com</strong>
+              </div>
+            </div>
+            <div class="contact-card-item">
+              <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div class="contact-detail">
+                <span>Location</span>
+                <strong>New York, USA</strong>
+              </div>
+            </div>
+            <div class="contact-card-item">
+              <div class="contact-icon"><i class="fas fa-clock"></i></div>
+              <div class="contact-detail">
+                <span>Response Time</span>
+                <strong>Within 24 Hours</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-col">
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <label for="nameInput">Full Name</label>
+              <div class="input-wrap">
+                <i class="fas fa-user input-icon"></i>
+                <input type="text" id="nameInput" placeholder="John Doe" required />
+                <div class="input-line"></div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="emailInput">Email Address</label>
+              <div class="input-wrap">
+                <i class="fas fa-envelope input-icon"></i>
+                <input type="email" id="emailInput" placeholder="john@example.com" required />
+                <div class="input-line"></div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="subjectInput">Subject</label>
+              <div class="input-wrap">
+                <i class="fas fa-tag input-icon"></i>
+                <input type="text" id="subjectInput" placeholder="Project Discussion" />
+                <div class="input-line"></div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="messageInput">Message</label>
+              <div class="input-wrap textarea-wrap">
+                <i class="fas fa-message input-icon"></i>
+                <textarea id="messageInput" rows="5" placeholder="Tell me about your project..." required></textarea>
+                <div class="input-line"></div>
+              </div>
+            </div>
+            <button type="submit" class="btn-primary form-submit magnetic-btn">
+              <i class="fas fa-paper-plane"></i>
+              <span>Send Message</span>
+              <div class="btn-shine"></div>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== FOOTER ======== -->
+  <footer class="footer">
+    <div class="footer-glow"></div>
+    <div class="footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <span class="logo-bracket">&lt;</span>AM<span class="logo-bracket">/&gt;</span>
+          </div>
+          <p>Crafting digital experiences with passion, precision, and a touch of magic.</p>
+        </div>
+        <div class="footer-links-col">
+          <h5>Navigation</h5>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-col">
+          <h5>Services</h5>
+          <ul>
+            <li><a href="#services">Web Design</a></li>
+            <li><a href="#services">Landing Pages</a></li>
+            <li><a href="#services">UI Animation</a></li>
+            <li><a href="#contact">Hire Me</a></li>
+          </ul>
+        </div>
+        <div class="footer-social-col">
+          <h5>Connect</h5>
+          <div class="footer-socials">
+            <a href="#" class="fsocial" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="#" class="fsocial" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="fsocial" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="fsocial" target="_blank"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Sayyed Bukhari. All rights reserved. Crafted with <i class="fas fa-heart" style="color:#f43f5e"></i>
+          and lots of ☕</p>
+        <button class="back-to-top" id="backToTop">
+          <i class="fas fa-arrow-up"></i>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ======== SCRIPTS ======== -->
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+  <!-- Lenis -->
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+  <!-- Main Script -->
+  <script src="script.js"></script>
+</body>
+
+</html>
